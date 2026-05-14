@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subnautica 2 Countdown</title>
+    <meta name="description" content="Countdown to the release of Subnautica 2.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Confetti script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="pda-overlay" class="overlay">
+        <div style="text-align: center;">
+            <h2 class="glow-text" style="font-size: 2rem; margin-bottom: 2rem;">PDA Audio Offline</h2>
+            <button id="init-btn" class="cyber-btn">Initialize Audio System</button>
+        </div>
+    </div>
+    <div id="flash-overlay"></div>
+    <div class="water-background" id="water-bg"></div>
+    <div class="bubbles" id="bubbles-container"></div>
+    <div class="creature-shadows" id="creature-container"></div>
+    
+    <main class="container glass" id="main-container">
+        <h1 class="glow-text" id="title-text">Subnautica 2</h1>
+        <p class="subtitle" id="subtitle-text">Deploying to Planet Zezura...</p>
+        
+        <div id="countdown" class="countdown">
+            <div class="time-box">
+                <span id="days" class="number">00</span>
+                <span class="label">Days</span>
+            </div>
+            <div class="time-box">
+                <span id="hours" class="number">00</span>
+                <span class="label">Hours</span>
+            </div>
+            <div class="time-box">
+                <span id="minutes" class="number">00</span>
+                <span class="label">Minutes</span>
+            </div>
+            <div class="time-box" id="seconds-box">
+                <span id="seconds" class="number">00</span>
+                <span class="label">Seconds</span>
+            </div>
+        </div>
+
+        <div id="launch-message" class="hidden">
+            <h2 class="glow-text success-text">Welcome to the Unknown!</h2>
+            <p>Subnautica 2 is now available in Early Access.</p>
+            <a href="steam://rungameid/1962700" class="cyber-btn" style="margin-top: 2rem; display: inline-block; text-decoration: none;">
+                Launch Subnautica 2
+            </a>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
